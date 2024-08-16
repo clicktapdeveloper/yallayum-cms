@@ -1,8 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-
-
 const BASE_URL = process.env.REACT_APP_BASE_URL_SERVER;
 
 const API = axios.create({
@@ -70,16 +68,7 @@ API.updateCategory = (id, data) => {
   return API.patch(`category/${id}`, data);
 };
 
-// Promo
-API.getAllPromo = () => {
-  return API.get("promo");
-};
-API.addPromo = (data) => {
-  return API.post("promo", data);
-};
-API.updatePromo = (id, data) => {
-  return API.patch(`promo/${id}`, data);
-};
+ 
 
 // blogs
 
@@ -347,5 +336,19 @@ API.getAllSize = () => {
 };
 API.updateSize = (id, data) => {
   return API.patch(`size/${id}`, data);
+};
+
+// promo code
+
+API.registerPromo = (data) => {
+  return API.post("/promo", data);
+};
+
+API.getPromo = () => {
+  return API.get("/promo");
+};
+
+API.updatePromo = (id, data) => {
+  return API.patch(`/promo/${id}`, data);
 };
 export { API };

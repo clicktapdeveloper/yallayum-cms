@@ -36,6 +36,9 @@ import EditMember from "../pages/MembersManagement/EditMember";
 import AddRecipes from "../pages/SiteManagement/recipes/AddRecipes";
 import AllRecipes from "../pages/SiteManagement/recipes/AllRecipes";
 import EditRecipes from "../pages/SiteManagement/recipes/EditRecipes";
+import PromoComponent from "../pages/ecommerce/promo/PromoComponent";
+import AddPromo from "../pages/ecommerce/promo/AddPromo";
+import EditPromo from "../pages/ecommerce/promo/EditPromo";
 
 const router = createBrowserRouter([
   {
@@ -151,6 +154,23 @@ const router = createBrowserRouter([
               {
                 path: "edit-category",
                 element: <EditCategory />,
+              },
+            ],
+          },
+          {
+            path: "promo",
+            children: [
+              {
+                path: "",
+                element: <PromoComponent />,
+              },
+              {
+                path: "add-promo",
+                element: <AddPromo />,
+              },
+              {
+                path: "edit-promo",
+                element: <EditPromo />,
               },
             ],
           },

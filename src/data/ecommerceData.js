@@ -8,6 +8,7 @@ import { IoIosCreate } from "react-icons/io";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { BsPeopleFill } from "react-icons/bs";
 import { LiaBlogSolid } from "react-icons/lia";
+import { TbDiscount } from "react-icons/tb";
 
 const ecommerceData = [
   {
@@ -33,6 +34,11 @@ const ecommerceData = [
         icon: <MdCoffeeMaker className="" />,
         name: "Custom Product ",
         link: "store/custom-product",
+      },
+      {
+        icon: <TbDiscount className="" />,
+        name: "Promo ",
+        link: "store/promo",
       },
       {
         icon: <MdOutlineRateReview className="" />,
