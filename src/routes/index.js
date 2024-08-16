@@ -39,6 +39,9 @@ import EditRecipes from "../pages/SiteManagement/recipes/EditRecipes";
 import PromoComponent from "../pages/ecommerce/promo/PromoComponent";
 import AddPromo from "../pages/ecommerce/promo/AddPromo";
 import EditPromo from "../pages/ecommerce/promo/EditPromo";
+import TickerComponent from "../pages/SiteManagement/ticker/TickerComponent";
+import AddTicker from "../pages/SiteManagement/ticker/AddTicker";
+import EditTicker from "../pages/SiteManagement/ticker/EditTicker";
 
 const router = createBrowserRouter([
   {
@@ -224,6 +227,23 @@ const router = createBrowserRouter([
               {
                 path: "edit",
                 element: <EditRecipes />,
+              },
+            ],
+          },
+          {
+            path: "ticker",
+            children: [
+              {
+                path: "",
+                element: <TickerComponent />,
+              },
+              {
+                path: "add",
+                element: <AddTicker />,
+              },
+              {
+                path: "edit",
+                element: <EditTicker />,
               },
             ],
           },

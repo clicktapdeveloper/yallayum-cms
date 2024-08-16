@@ -68,8 +68,6 @@ API.updateCategory = (id, data) => {
   return API.patch(`category/${id}`, data);
 };
 
- 
-
 // blogs
 
 API.getBlogHeading = () => {
@@ -351,4 +349,23 @@ API.getPromo = () => {
 API.updatePromo = (id, data) => {
   return API.patch(`/promo/${id}`, data);
 };
+
+//ticker
+
+API.registerTicker = (data) => {
+  return API.post("/ticker", data);
+};
+
+API.getTickers = () => {
+  return API.get("/ticker");
+};
+
+API.updateTicker = (id, data) => {
+  return API.patch(`/ticker/${id}`, data);
+};
+
+API.deleteTicker = (id) => {
+  return API.delete(`/ticker/${id}`);
+};
+
 export { API };
