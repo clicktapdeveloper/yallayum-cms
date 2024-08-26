@@ -55,7 +55,7 @@ const Overview = ({ dashboardData }) => {
           <div className="w-3/4">
             <p className="capitalize group-hover:text-white text-[#8F8F8F] text-sm mb-4"></p>
             <p className=" text-black group-hover:text-white text-lg font-bold">
-              $ {dashboardData?.revenue}
+              AED {dashboardData?.revenue}
             </p>
           </div>
           <div className="w-3/12 flex justify-end">
