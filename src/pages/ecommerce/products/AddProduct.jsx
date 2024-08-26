@@ -177,8 +177,7 @@ const AddProduct = () => {
     setVariations(updatedVariations);
   };
 
-  console.log(video, "setVideo");
-
+ 
   return (
     <div className="page-area mt-10">
       <Header

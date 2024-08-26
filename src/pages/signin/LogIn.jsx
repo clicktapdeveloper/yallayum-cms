@@ -49,9 +49,7 @@ const LogIn = () => {
           </div>
 
           <div className="form-area">
-            {/* <h1 className="text-center text-3xl sm:text-4xl font-normal mb-7">
-              Yalla Yum Admin
-            </h1> */}
+           
             <form
               className="grid grid-col-1 gap-6"
               onSubmit={handleSubmit(onSubmit)}

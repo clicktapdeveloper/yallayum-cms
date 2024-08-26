@@ -35,8 +35,7 @@ const Newsletter = () => {
         pagetitle={"Site Management"}
         previous={"Dashboard"}
         currentpage={"Newsletter"}
-        // btntext={"Add Members "}
-        // btnlink={"/dashboard/members-management/add-members"}
+     
       />
       <div className="page-comp bg-white mt-10 rounded-xl px-8 py-8">
         <ResultFilterBar

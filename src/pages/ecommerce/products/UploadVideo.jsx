@@ -23,8 +23,7 @@ const UploadVideo = ({ setVideo , videoUrl }) => {
     inputRef.current.value = "";
   };
 
-  console.log(videoUrl , "videoUrl")
-
+ 
   return (
     <div className="video-input">
       <input

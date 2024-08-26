@@ -13,8 +13,7 @@ import Loader from "../../components/general/Loader";
 import InfoCard from "../../components/general/InfoCard";
 
 const EditMember = () => {
-  const [isInvalid, setIsInvalid] = useState(false);
-  const [loading, setLoading] = useState(false);
+   const [loading, setLoading] = useState(false);
   const [pageData, setPageData] = useState(true);
   const navigate = useNavigate();
   let query = useQuery();

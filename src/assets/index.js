@@ -2,7 +2,6 @@ import Logo from "./images/Logo.png";
 import dashboardlogo from "./images/dashboardlogo.svg";
 import examsmanagementicon from "./images/examsmanagementicon.svg";
 import discount1 from "./images/discount1.svg";
-import topic from "./images/topic.svg";
 import addquestion from "./images/addquestion.svg";
 import examicon from "./images/examicon.svg";
 import allusericon from "./images/allusericon.svg";
@@ -12,7 +11,7 @@ import examManagement from "./images/examManagement.svg";
 import memberManagement from "./images/memberManagement.svg";
 import subscriptionManagement from "./images/subscriptionManagement.svg";
 import siteManagement from "./images/siteManagement.svg";
-import blackLogo from './images/blackLogo.webp'
+import blackLogo from "./images/blackLogo.webp";
 
 export {
   Logo,
@@ -20,7 +19,6 @@ export {
   dashboardlogo,
   examsmanagementicon,
   discount1,
-  topic,
   addquestion,
   examicon,
   allusericon,

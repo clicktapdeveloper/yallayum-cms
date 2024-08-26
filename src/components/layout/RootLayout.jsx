@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Dashboardsidebar from "./Dashboardsidebar";
 import Bodyarea from "./Bodyarea";
-import Header from "../dashboard/Header";
-import { Button } from "@nextui-org/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const RootLayout = () => {
@@ -26,7 +24,7 @@ const RootLayout = () => {
         }`}
       >
         <Dashboardsidebar toggleSidebar={toggleSidebar} />
-       </div>
+      </div>
       <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden bg-gray-100 px-4 py-4">
         {/* <Header /> */}
         <Bodyarea />

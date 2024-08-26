@@ -34,21 +34,7 @@ API.updateProfile = (data) => {
   return API.patch(`admin/`, data);
 };
 
-// exam
-API.getAllExams = () => {
-  return API.get("exam");
-};
-API.updateExam = (id, data) => {
-  return API.patch(`exam/${id}`, data);
-};
-
-API.addExam = (data) => {
-  return API.post("exam", data);
-};
-
-API.getSingleExam = (id) => {
-  return API.get(`exam/${id}`);
-};
+ 
 
 //Category
 
@@ -128,12 +114,14 @@ API.deleteRecipe = (id) => {
   return API.delete(`recipe/${id}`);
 };
 
-//users
-API.registerUser = (data) => {
-  return API.post("user", data);
-};
+ 
 
-//MembersManagement
+ 
+ 
+ 
+ 
+ 
+ //MembersManagement
 API.getAllUsers = () => {
   return API.get("user");
 };
@@ -163,84 +151,6 @@ API.updateUser = (id, data) => {
   return API.patch(`user/by-admin/${id}`, data);
 };
 
-//adming
-// API.updateUserByAdmin = (data) => {
-//   return API.patch(`user`, data);
-// };
-
-API.logInUser = (data) => {
-  return API.post("user/login", data);
-};
-API.forgetPassword = (data) => {
-  return API.post("user/forget-password", data);
-};
-API.resetPassword = (data) => {
-  return API.post("user/reset-password", data);
-};
-
-//subscription
-API.getAllSubscription = (data) => {
-  return API.get("subscription", data);
-};
-API.addSubscription = (data) => {
-  return API.post("subscription", data);
-};
-API.updateSubscription = (id, data) => {
-  return API.patch(`subscription/${id}`, data);
-};
-
-//topics
-API.getAllTopics = (data) => {
-  return API.get("topic", data);
-};
-API.addTopics = (data) => {
-  return API.post("topic", data);
-};
-API.updateTopics = (id, data) => {
-  return API.patch(`topic/${id}`, data);
-};
-
-//questions
-API.getAllQuestion = (data) => {
-  return API.get("question", data);
-};
-API.getSingleQuestion = (id) => {
-  return API.get(`question/${id}`);
-};
-API.addQuestion = (data) => {
-  return API.post("question", data);
-};
-API.updateQuestion = (id, data) => {
-  return API.patch(`question/${id}`, data);
-};
-
-//questions
-API.SubscriptionUser = (data) => {
-  return API.get("/user/subscription", data);
-};
-
-//all country
-API.getAllCountry = (data) => {
-  return API.get("/country", data);
-};
-
-//all feedback
-API.getAllFeedBack = () => {
-  return API.get("/feedback");
-};
-
-API.updatefeedBackStatus = (id, data) => {
-  return API.patch(`feedback/${id}`, data);
-};
-
-//all reports
-API.getAllReports = () => {
-  return API.get("/report");
-};
-
-API.updateReportStatus = (id, data) => {
-  return API.patch(`report/${id}`, data);
-};
 
 //product
 

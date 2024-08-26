@@ -9,7 +9,6 @@ import { categoriescolumn } from "../../../data/categoriescolumn ";
 
 const Categories = () => {
   const [itemPerPage, setitemPerPage] = useState(10);
-  const [filterdata, setfilterdata] = useState();
   const [searchFilter, setSearchFilter] = useState(null);
 
   const [loading, setLoading] = useState(true);

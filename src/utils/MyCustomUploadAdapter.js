@@ -12,7 +12,7 @@ class MyCustomUploadAdapter {
         new Promise((resolve, reject) => {
           formData.append("image", file, file.name);
 
-          axios.post("https://yalla.ctround.com/api/image", formData, {
+          axios.post("https://urchin-app-uyncm.ondigitalocean.app/api/image", formData, {
             headers: {
               'Content-Type': 'multipart/form-data'
             }
@@ -22,7 +22,7 @@ class MyCustomUploadAdapter {
             //   console.log('Upload response:', data);  // Log the response for debugging
               if (data && data.data) {
                 resolve({
-                  default:` https://yalla.ctround.com${data.data[0]}`,
+                  default:`https://urchin-app-uyncm.ondigitalocean.app/api/${data.data[0]}`,
                 });
               } else {
                 reject(`Couldn't upload file: ${file.name}. Server responded with: ${JSON.stringify(data)}`);

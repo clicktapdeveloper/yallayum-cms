@@ -43,7 +43,7 @@ const InputField = ({
               required={isRequired}
               options={options}
               isInvalid={isInvalid}
-              defaultSelectedKeys={[defaultValue]}
+              defaultSelectedKeys={[String(defaultValue)]}
               isDisabled={disabled}
               size="lg"
               radius="md"
@@ -92,7 +92,7 @@ const InputField = ({
               yes
             </Checkbox>
           ) : type === "textarea" ? (
-            <Textarea 
+            <Textarea
               type={isVisible ? "text" : type}
               required={isRequired}
               variant="bordered"
@@ -108,7 +108,6 @@ const InputField = ({
               onValueChange={setValue}
               color={isInvalid ? "#00000" : "#8F8F8F"}
               {...register(name, { required: isRequired ? true : false })}
-              
               classNames={{
                 inputWrapper: [
                   "bordered",

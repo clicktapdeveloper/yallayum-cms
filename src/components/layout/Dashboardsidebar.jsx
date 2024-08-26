@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FirstSidebar from "../dashboard/FirstSidebar";
 import SecondSidebar from "../dashboard/SecondSidebar";
-import { Button } from "@nextui-org/react";
-import { tabsdata } from "../../data/tabsdata";
+ import { tabsdata } from "../../data/tabsdata";
 import { settingData } from "../../data/settingData";
 import { ecommerceData } from "../../data/ecommerceData";
 
